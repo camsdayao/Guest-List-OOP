@@ -1,0 +1,44 @@
+Write a complete program that stores and prints participants in a party. As part of your program, write a Party class that implements these members:
+
+An instance constant that holds the maximum number of guests.
+Three instance variables that hold, respectively, the actual number of guests, an array of the names of the
+guests, and the party host’s name.
+A constructor that stores the maximum number of guests and the host’s name.
+An addGuest method that  adds a guest to the guest list or prints an error message if the guest is already on the list or there’s no more room on the guest list.
+A helper method, isOnList, that receives a parameter named guest. The method returns true if guest is on the guest list and returns false otherwise.
+A printParty method that prints the party’s host and guests.
+Provide a driver class that tests your Party class. Your driver class should contain this main method:
+
+public static void main(String[] args)
+
+{
+
+  Party party = new Party(3, "David Beckham");
+
+  party.addGuest("Roberto Baggio");
+
+  party.addGuest("Zinedine Zidane");
+
+  party.addGuest("Roberto Baggio");
+
+  party.addGuest("Johan Cruyff");
+
+  party.addGuest("Diego Maradona");
+
+  party.printParty();
+
+} // end main 
+
+
+When compiled and run, your driver class and Party class together should produce this output:
+ 
+
+Roberto Baggio is already on the guest list.
+
+Diego Maradona cannot come to the party. The guest list is full.
+
+Guest list for David Beckham's party:
+
+Roberto Baggio
+Zinedine Zidane
+Johan Cruyff
